@@ -5,9 +5,11 @@
 div.container {
   display: flex;
   background-color: #ff4755;
+  justify-content: space-around;
 }
 
 div.box-code {
+  flex-grow: 1;
   width: 500px;
   height: 500px;
   margin: 30px;
@@ -16,9 +18,19 @@ div.box-code {
   background-color: #ffffff9a;
   border-radius: 25px;
   border: 10px solid #22a7ff;
+  position: relative;
+}
+
+div.box-code button {
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 7px 15px;
 }
 
 div.box-result {
+  flex-grow: 1;
   width: 500px;
   height: 500px;
   margin: 30px;
@@ -29,19 +41,47 @@ div.box-result {
   position: relative;
 }
 
-/* div.rocket {
-  position: absolute;
-  width: 100%;
-  padding-right: 21px;
-  padding-top: 14px;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 100;
-} */
-
 div.moon {
   position: absolute;
   top: 5px;
   right: 5px;
   z-index: 1;
+}
+
+.text {
+  color: #000;
+  font-family: "Space Mono", monospace;
+  margin: 10px;
+}
+
+.withInput {
+  display: flex;
+  margin-left: 30px;
+}
+
+.withInput input {
+  flex-grow: 1;
+  padding: 5px 10px;
+  font-family: "Space Mono", monospace;
+}
+
+.ident {
+  margin-left: 30px;
+}
+
+button {
+  background: #ff4755;
+  color: inherit;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+}
+
+button:hover {
+  background: #f5ff33;
 }
