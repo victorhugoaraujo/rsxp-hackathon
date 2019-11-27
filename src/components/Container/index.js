@@ -6,10 +6,10 @@ import { Rocket } from "./styles.js";
 // import logo from './assets/logo.svg';
 
 export default function Container() {
-  const [code, setCode] = useState('');
-  const [result, setResult] = useState('');
+  const [code, setCode] = useState("");
+  const [result, setResult] = useState("");
 
-  function handleSubmit(event){
+  function handleSubmit(event) {
     event.preventDefault();
     setResult(code);
   }
@@ -18,10 +18,15 @@ export default function Container() {
     <form onSubmit={handleSubmit}>
       <div className="container">
         <div className="box-code">
-          <div className="sdjak">
-            <p>Instruções de codigo</p>
+          <div className="text">
+            <p>.foguete {"{"} </p>
+            <p className="ident">display: flex; </p>
+            <p className="withInput">
+              justify-content:{" "}
+              <input onChange={event => setCode(event.target.value)} />;
+            </p>
+            <p>{"}"} </p>
           </div>
-          <input onChange={event => setCode(event.target.value)} />
           <button>Validar</button>
         </div>
 
