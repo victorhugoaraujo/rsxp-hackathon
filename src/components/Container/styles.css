@@ -4,14 +4,12 @@
 
 div.container {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   background-color: #ff4755;
 }
 
 div.box-code {
-  width: 744px;
-  height: 744px;
+  width: 500px;
+  height: 500px;
   margin: 30px;
   padding: 10px;
   justify-content: center;
@@ -21,8 +19,8 @@ div.box-code {
 }
 
 div.box-result {
-  width: 744px;
-  height: 744px;
+  width: 500px;
+  height: 500px;
   margin: 30px;
   padding: 10px;
   background-color: #ffffff9a;
@@ -31,7 +29,7 @@ div.box-result {
   position: relative;
 }
 
-div.rocket {
+/* div.rocket {
   position: absolute;
   width: 100%;
   padding-right: 21px;
@@ -39,7 +37,7 @@ div.rocket {
   display: flex;
   justify-content: flex-end;
   z-index: 100;
-}
+} */
 
 div.moon {
   position: absolute;
